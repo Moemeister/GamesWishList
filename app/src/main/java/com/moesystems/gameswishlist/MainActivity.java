@@ -1,5 +1,8 @@
 package com.moesystems.gameswishlist;
 
+import android.annotation.SuppressLint;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -40,13 +43,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
     //Funciones onclick para los botones del menu
+
     public void boton1_list(View v){
         adapter.setFalse();
+        btn1.setBackgroundColor(getResources().getColor(R.color.azul));
+        btn2.setBackgroundColor(getResources().getColor(R.color.skyblue));
         adapter = new GamesAdapter(game,v.getContext());
         rv.setAdapter(adapter);
     }
     public void boton2_bookmark(View v){
         adapter.setTrue();
+        btn2.setBackgroundColor(getResources().getColor(R.color.azul));
+        btn1.setBackgroundColor(getResources().getColor(R.color.skyblue));
         adapter = new GamesAdapter(bm,v.getContext());
         rv.setAdapter(adapter);
     }
