@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GamesWishList</string>
+    <string name="games">Games</string>
+    <string name="bookmark">Bookmark</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true">
+        <TableRow android:gravity="center">
+            <Button
+                android:id="@+id/games"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:text="@string/games" />
+
+            <Button
+                android:id="@+id/fav"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="@string/bookmark" />
+        </TableRow>
+        <TableRow>
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="4dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/left"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="4dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/right"
+                android:visibility="invisible"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+<android.support.v7.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:id="@+id/recycler"
+    tools:context="com.moesystems.gameswishlist.MainActivity">
+
+
+</android.support.v7.widget.RecyclerView>
+</LinearLayout>
