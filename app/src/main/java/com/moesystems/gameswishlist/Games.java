@@ -10,10 +10,13 @@ public class Games {
     private int img;
     private String desc;
 
+    private boolean wishgame;
+
     public Games(String name, int img, String desc) {
         this.name = name;
         this.img = img;
         this.desc = desc;
+        wishgame = false;
     }
 
     public String getName() {
@@ -38,5 +41,13 @@ public class Games {
 
     public void setDesc(String desc) {
         this.desc = desc;
+    }
+
+    public void set(boolean wishgame ){
+        this.wishgame = wishgame;
+    }
+
+    public boolean yesorno(){
+        return wishgame;
     }
 }

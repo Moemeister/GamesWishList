@@ -7,17 +7,17 @@
     android:orientation="vertical"
     android:gravity="center">
 
-    <TableLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:animateLayoutChanges="true">
-        <TableRow android:gravity="center">
+        android:layout_height="wrap_content">
+
             <Button
                 android:id="@+id/games"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:background="#fff"
+                android:background="@color/white"
+                android:onClick="boton1_list"
                 android:text="@string/games" />
 
             <Button
@@ -26,26 +26,10 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
+                android:onClick="boton2_bookmark"
                 android:text="@string/bookmark" />
-        </TableRow>
-        <TableRow>
-            <View
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="4dp"
-                android:background="@color/colorPrimary"
-                android:id="@+id/left"
-                />
-            <View
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="4dp"
-                android:background="@color/colorPrimary"
-                android:id="@+id/right"
-                android:visibility="invisible"
-                />
-        </TableRow>
-    </TableLayout>
+
+    </LinearLayout>
 
 
 <android.support.v7.widget.RecyclerView
