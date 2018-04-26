@@ -23,8 +23,8 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.GamesViewHol
 
     private Context mContext;
 
-    public GamesAdapter(ArrayList<Games> series,Context cont) {
-        this.game = series;
+    public GamesAdapter(ArrayList<Games> game,Context cont) {
+        this.game = game;
         this.mContext = cont;
     }
 

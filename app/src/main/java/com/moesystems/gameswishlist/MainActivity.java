@@ -78,15 +78,15 @@ public class MainActivity extends AppCompatActivity {
     // rompe el ciclo y se quitar del arraylist
     // y se le da f5 para ver que se quito con el isOnBookmark
     public void quitar(String GameName){
-        int counter=0;
+        int i=0;
 
         for(Games game : bm){
             if(game.getName() == GameName){
                 break;
             }
-            counter++;
+            i++;
         }
-        bm.remove(counter);
+        bm.remove(i);
         if(adapter.isOnBookmark()){
             adapter = new GamesAdapter(bm, this);
             rv.setAdapter(adapter);
